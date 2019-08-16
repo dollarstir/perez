@@ -6,8 +6,8 @@
   <meta charset="utf-8">
   <title>Perez Investment</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+  <meta content="Perez,investment,ghana,estate,developement,land for sale,house for sale, properties" name="keywords">
+  <meta content="Perez investment,Ghana, number 1  estate agency" name="description">
 
   <!-- Favicons -->
   <!-- <link href="img/favicon.png" rel="icon">
@@ -71,10 +71,10 @@
               <label for="city">City</label>
               <select class="form-control form-control-lg form-control-a" id="city">
                 <option>All City</option>
-                <option>Alabama</option>
-                <option>Arizona</option>
-                <option>California</option>
-                <option>Colorado</option>
+                <option>Acrra</option>
+                <option>Kumasi</option>
+                <option>TCape Coast </option>
+                <option>Takoradi</option>
               </select>
             </div>
           </div>
@@ -142,7 +142,7 @@
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="index-2.html">Perez<span class="color-b">Investment</span></a>
+      <a class="navbar-brand text-brand" href="index"> <img src="logo.png" alt="" style="width:50px; height:50px;"> Perez<span class="color-b">Investment</span></a>
       <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse"
         data-target="#navbarTogglerDemo01" aria-expanded="false">
         <span class="fa fa-search" aria-hidden="true"></span>
@@ -196,7 +196,7 @@
       <div class="row">
         <div class="col-md-12 col-lg-8">
           <div class="title-single-box">
-            <h1 class="title-single">We Do Great Design For Creative Folks</h1>
+            <h1 class="title-single">We Do Great Design For All</h1>
           </div>
         </div>
         <div class="col-md-12 col-lg-4">
@@ -234,7 +234,7 @@
         <div class="col-md-12 section-t8">
           <div class="row">
             <div class="col-md-6 col-lg-5">
-              <img src="img/about-2.jpg" alt="" class="img-fluid">
+              <img src="img/attachments/4.jpg" alt="" class="img-fluid" style="width:600px; height:600px;">
             </div>
             <div class="col-lg-2  d-none d-lg-block">
               <!-- <div class="title-vertical d-flex justify-content-start">

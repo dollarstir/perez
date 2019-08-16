@@ -145,7 +145,7 @@
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="index-2.html">Perez<span class="color-b">Investment</span></a>
+      <a class="navbar-brand text-brand" href="index"> <img src="logo.png" alt="" style="width:50px; height:50px;"> Perez<span class="color-b">Investment</span></a>
       <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse"
         data-target="#navbarTogglerDemo01" aria-expanded="false">
         <span class="fa fa-search" aria-hidden="true"></span>
@@ -1152,20 +1152,26 @@
         <div class="col-sm-12 col-md-4">
           <div class="widget-a">
             <div class="w-header-a">
-              <h3 class="w-title-a text-brand">EstateAgency</h3>
+              <h3 class="w-title-a text-brand">Perez Investment</h3>
             </div>
             <div class="w-body-a">
-              <p class="w-text-a color-text-a">
-                Enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat duis
-                sed aute irure.
+              <p class="w-text-a color-text-a" style="color:black;">
+              Perez Investment Ltd <br>
+              P.O. Box AF 1030
+
               </p>
             </div>
             <div class="w-footer-a">
               <ul class="list-unstyled">
                 <li class="color-a">
-                  <span class="color-text-a">Phone .</span> contact@example.com</li>
+                  <span class="color-text-a" style="color:black;">Phone 1 :</span> +233 (0) 302940368</li>
+
+                  <li class="color-a">
+                  <span class="color-text-a"  style="color:black;">Phone 2 :</span> +233 (0) 544693706.</li>
                 <li class="color-a">
-                  <span class="color-text-a">Email .</span> +54 356 945234</li>
+                  <span class="color-text-a" style="color:black;">Email: </span> <a href="mailto:perezinvestmentp@gmail.com">perezinvestmentp@gmail.com</a></li>
+                  <li class="color-a">
+                  <span class="color-text-a" style="color:black;">Website :</span> <a href="http://www.perezinvestment.com">www.perezinvestment.com</a></li>
               </ul>
             </div>
           </div>
@@ -1286,19 +1292,14 @@
             </ul>
           </div>
           <div class="copyright-footer">
-            <p class="copyright color-text-a">
-              &copy; Copyright
-              <span class="color-a">EstateAgency</span> All Rights Reserved.
+            <p class="copyright color-text-a"  style="color:black;">
+              &copy; Copyright <?php echo date ("Y");?>
+              <span class="color-a">Perez Investment</span> All Rights Reserved.
             </p>
           </div>
           <div class="credits">
-            <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=EstateAgency
-            -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            
+            Designed by <a href="https://purplesofts.com/">Dollarsoft Corporation</a>
           </div>
         </div>
       </div>
