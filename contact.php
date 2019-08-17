@@ -165,6 +165,7 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               Pages
+              
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="property-single.html">Property Single</a>
@@ -174,7 +175,7 @@
             </div>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link active" href="contact.html">Contact</a>
+            <a class="nav-link active" href="contact">Contact</a>
           </li>
 
           <li class="nav-item">
@@ -231,11 +232,13 @@
         <div class="col-sm-12 section-t8" style="">
           <div class="row">
             <div class="col-md-7">
-              <form class="form-a contactForm" action="#" method="post" role="form" id="cform">
-                <div id="mcon">
-                <div id="sendmessage">Your message has been sent. Thank you!</div>
+
+            <div id="mcon">
+                <!-- <div id="sendmessage">Your message has been sent. Thank you!</div> -->
                 </div>
-                <div id="errormessage"></div>
+              <form class="" action="#" method="post" id="cform">
+               
+                <!-- <div id="errormessage"></div> -->
                 <div class="row">
                   <div class="col-md-6 mb-3">
                     <div class="form-group">
@@ -262,8 +265,7 @@
                     </div>
                   </div>
                   <div class="col-md-12">
-                    <button type="submit" class="btn btn-a">Send Message</button>
-                  </div>
+                    <input type="submit" class="btn btn-a" value="Send">                  </div>
                 </div>
               </form>
             </div>

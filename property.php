@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from bootstrapmade.com/demo/themes/EstateAgency/property-grid.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Aug 2019 12:18:44 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
   <meta charset="utf-8">
-  <title>EstateAgency Bootstrap Template</title>
+  <title>Perez Investment</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- <link href="img/favicon.png" rel="icon"> -->
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -142,7 +143,7 @@
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="index-2.html">Estate<span class="color-b">Agency</span></a>
+      <a class="navbar-brand text-brand" href="index"> <img src="logo.png" alt="" style="width:50px; height:50px;"> Perez<span class="color-b">Investment</span></a>
       <button type="button" class="btn btn-link nav-search navbar-toggle-box-collapse d-md-none" data-toggle="collapse"
         data-target="#navbarTogglerDemo01" aria-expanded="false">
         <span class="fa fa-search" aria-hidden="true"></span>
@@ -150,18 +151,18 @@
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="index-2.html">Home</a>
+            <a class="nav-link" href="index">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="property-grid.html">Property</a>
+            <a class="nav-link active" href="property">Property</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="blog-grid.html">Blog</a>
-          </li>
-          <li class="nav-item dropdown">
+          </li> -->
+          <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               Pages
@@ -172,9 +173,13 @@
               <a class="dropdown-item" href="agents-grid.html">Agents Grid</a>
               <a class="dropdown-item" href="agent-single.html">Agent Single</a>
             </div>
-          </li>
+          </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="contact">Contact</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="login">Admin Login</a>
           </li>
         </ul>
       </div>
@@ -550,20 +555,26 @@
         <div class="col-sm-12 col-md-4">
           <div class="widget-a">
             <div class="w-header-a">
-              <h3 class="w-title-a text-brand">EstateAgency</h3>
+              <h3 class="w-title-a text-brand">Perez Investment</h3>
             </div>
             <div class="w-body-a">
-              <p class="w-text-a color-text-a">
-                Enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat duis
-                sed aute irure.
+              <p class="w-text-a color-text-a" style="color:black;">
+              Perez Investment Ltd <br>
+              P.O. Box AF 1030
+
               </p>
             </div>
             <div class="w-footer-a">
               <ul class="list-unstyled">
                 <li class="color-a">
-                  <span class="color-text-a">Phone .</span> contact@example.com</li>
+                  <span class="color-text-a" style="color:black;">Phone 1 :</span> +233 (0) 302940368</li>
+
+                  <li class="color-a">
+                  <span class="color-text-a"  style="color:black;">Phone 2 :</span> +233 (0) 544693706.</li>
                 <li class="color-a">
-                  <span class="color-text-a">Email .</span> +54 356 945234</li>
+                  <span class="color-text-a" style="color:black;">Email: </span> <a href="mailto:perezinvestmentp@gmail.com">perezinvestmentp@gmail.com</a></li>
+                  <li class="color-a">
+                  <span class="color-text-a" style="color:black;">Website :</span> <a href="http://www.perezinvestment.com">www.perezinvestment.com</a></li>
               </ul>
             </div>
           </div>
@@ -684,19 +695,14 @@
             </ul>
           </div>
           <div class="copyright-footer">
-            <p class="copyright color-text-a">
-              &copy; Copyright
-              <span class="color-a">EstateAgency</span> All Rights Reserved.
+            <p class="copyright color-text-a"  style="color:black;">
+              &copy; Copyright <?php echo date ("Y");?>
+              <span class="color-a">Perez Investment</span> All Rights Reserved.
             </p>
           </div>
           <div class="credits">
-            <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=EstateAgency
-            -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            
+            Designed by <a href="https://purplesofts.com/">Dollarsoft Corporation</a>
           </div>
         </div>
       </div>
@@ -724,5 +730,5 @@
   <script>if( window.self == window.top ) { (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-55234356-4', 'auto'); ga('send', 'pageview'); } </script>
 </body>
 
-<!-- Mirrored from bootstrapmade.com/demo/themes/EstateAgency/property-grid.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Aug 2019 12:18:46 GMT -->
+
 </html>

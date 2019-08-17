@@ -12,13 +12,7 @@ $(document).ready(function () {
 
 
 
-    function verifysuccess(response) {
-
-      $(".sh").html(response);
-      $("#erro").fadeOut(15000);
-
-      
-  };
+   
 
   $("#cform").submit(function (event) {
     
