@@ -1,3 +1,6 @@
+<?php 
+include "core.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -150,13 +153,13 @@
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="index">Home</a>
+            <a class="nav-link" href="index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about">About</a>
+            <a class="nav-link" href="about.php">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="property">Property</a>
+            <a class="nav-link" href="property.php">Property</a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link" href="blog-grid.html">Blog</a>
@@ -175,11 +178,11 @@
             </div>
           </li> -->
           <li class="nav-item">
-            <a class="nav-link active" href="contact">Contact</a>
+            <a class="nav-link active" href="contact.php">Contact</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="login">Admin Login</a>
+            <a class="nav-link" href="admin/index.php">Admin Login</a>
           </li>
         </ul>
       </div>

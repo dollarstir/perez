@@ -33,7 +33,7 @@ $(document).ready(function () {
         e.preventDefault();
         
         var optionsc = {
-            url: 'process.php?dollar=coursereg',
+            url: 'process.php?dollar=property',
             type: 'post',
             data: new FormData(this),
             cache: false,
@@ -49,22 +49,6 @@ $(document).ready(function () {
 
 
 
-    $(".subt").submit(function (e) {
-        e.preventDefault();
-        
-        var optionst = {
-            url: 'process.php?dollar=teachreg',
-            type: 'post',
-            data: new FormData(this),
-            cache: false,
-            processData: false,
-            contentType: false,
-         //    beforeSend: prog,
-            success: resp,
-         }
- 
-        $.ajax(optionst);
- 
-    });
+   
     
 })

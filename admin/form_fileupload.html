@@ -1,59 +1,28 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from designreset.com/preview-equation/default/form_fileupload.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 25 Jul 2019 16:15:01 GMT -->
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>Add Property</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <title>File Upload | Equation - Multipurpose Bootstrap Dashboard Template </title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
-    <link href="assets/css/loader.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="assets/css/mess.css">
+    <link href="assets/css/loader.css" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/plugins.css" rel="stylesheet" type="text/css" />
     <!-- END GLOBAL MANDATORY STYLES -->
 
+    <!-- BEGIN PAGE LEVEL STYLES -->
     <link href="plugins/dropzone/dropzone.min.css" rel="stylesheet" type="text/css" />
     <link href="plugins/dropzone/basic.min.css" rel="stylesheet" type="text/css" />
     <link href="plugins/file-upload/file-upload-with-preview.css" rel="stylesheet" type="text/css" />
-
-    <!--  BEGIN CUSTOM STYLE FILE  -->
-    <style>
-        .form-control {
-            border: 1px solid #ccc;
-            color: #888ea8;
-            font-size: 15px;
-        }
-        code { color: #3862f5; }
-        .form-control:disabled, .form-control[readonly] { background-color: #f1f3f9; border-color: #f1f3f1; }
-        .btn-primary.disabled, .btn-primary:disabled { background-color: #3862f5; border-color: #3862f5; }
-        label { color: #3b3f5c; margin-bottom: 14px; }
-        .form-control::-webkit-input-placeholder { color: #888ea8; font-size: 15px; }
-        .form-control::-ms-input-placeholder { color: #888ea8; font-size: 15px; }
-        .form-control::-moz-placeholder { color: #888ea8; font-size: 15px; }
-        .form-control:focus { border-color: #3862f5; }
-        .input-group-text {
-            background-color: #f3f4f7;
-            border-color: #e9ecef;
-            color: #6156ce;
-        }
-        select.form-control {
-            display: inline-block;
-            width: 100%;
-            height: calc(2.25rem + 2px);
-            vertical-align: middle;
-            background: #fff url(assets/img/arrow-down.png) no-repeat right .75rem center;
-            background-size: 13px 14px;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-        }
-        select.form-control::-ms-expand { display: none; }
-    </style>
-    <!--  BEGIN CUSTOM STYLE FILE  -->
-
+    <!-- END PAGE LEVEL STYLES -->
 </head>
 <body>
-    <div id="eq-loader" style="display: none;">
+    <div id="eq-loader">
       <div class="eq-loader-div">
           <div class="eq-loading dual-loader mx-auto mb-5"></div>
       </div>
@@ -64,7 +33,7 @@
                 <a href="javascript:void(0);" class="nav-link sidebarCollapse" data-placement="bottom">
                     <i class="flaticon-menu-line-2"></i>
                 </a>
-            <a href="index.html" class=""> <img src="assets/img/logo-3.png" class="img-fluid" alt="logo"></a>
+            <a href="index-2.html" class=""> <img src="assets/img/logo-3.png" class="img-fluid" alt="logo"></a>
         </div>
         <ul class="nav navbar-nav">
             <li class="nav-item d-lg-none"> 
@@ -79,10 +48,192 @@
     <!--  BEGIN NAVBAR  -->
     <header class="header navbar fixed-top navbar-expand-sm">
         <a href="javascript:void(0);" class="sidebarCollapse d-none d-lg-block" data-placement="bottom"><i class="flaticon-menu-line-2"></i></a>
-       
+        <ul class="navbar-nav flex-row">
+            <li class="nav-item dropdown language-dropdown ml-1  ml-lg-0">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="flagDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="assets/img/ca.svg" alt=""> <span class="d-lg-inline-block d-none"></span>
+                </a>
+                <div class="dropdown-menu position-absolute" aria-labelledby="flagDropdown">
+                    <a class="dropdown-item" href="javascript:void(0);"><img src="assets/img/de.svg" class="flag-width" alt=""> &#xA0;German</a>
+                    <a class="dropdown-item" href="javascript:void(0);"><img src="assets/img/jp.svg" class="flag-width" alt=""> &#xA0;Japanese</a>
+                    <a class="dropdown-item" href="javascript:void(0);"><img src="assets/img/fr.svg" class="flag-width" alt=""> &#xA0;French</a>
+                    <a class="dropdown-item" href="javascript:void(0);"><img src="assets/img/ru.svg" class="flag-width" alt=""> &#xA0;Russian</a>
+                    <a class="dropdown-item" href="javascript:void(0);"><img src="assets/img/ca.svg" class="flag-width" alt=""> &#xA0;English</a>
+                </div>
+            </li>
+        </ul>
 
 
-        
+        <ul class="navbar-nav flex-row mr-lg-auto ml-lg-0  ml-auto">
+            <li class="nav-item dropdown message-dropdown ml-lg-4">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="messageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="flaticon-mail-10"></span><span class="badge badge-primary">13</span>
+                </a>
+                <div class="dropdown-menu  position-absolute" aria-labelledby="messageDropdown">
+                    <a class="dropdown-item title" href="javascript:void(0);">
+                        <i class="flaticon-chat-line mr-3"></i><span>You have 13 new messages</span>
+                    </a>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                        <div class="media">
+                            <div class="usr-img online mr-3">
+                                <img class="usr-img rounded-circle" src="assets/img/profile-9.jpg" alt="Generic placeholder image">
+                            </div>
+                            <div class="media-body">
+                                <div class="mt-0">
+                                    <p class="text mb-0">Browse latest projects...</p>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <p class="meta-user-name mb-0">Kara Young</p>
+                                    <p class="meta-time mb-0  align-self-center">1 min ago</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="media">
+                            <div class="usr-img mr-3">
+                                <img class="usr-img rounded-circle" src="assets/img/profile-24.jpg" alt="Generic placeholder image">
+                            </div>
+                            <div class="media-body">
+                                <div class="mt-0">
+                                    <p class="text mb-0">Design, Development and...</p>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <p class="meta-user-name mb-0">Amy Diaz</p>
+                                    <p class="meta-time mb-0  align-self-center">5 mins ago</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="media">
+                            <div class="usr-img online mr-3">
+                                <img class="usr-img rounded-circle" src="assets/img/profile-3.jpg" alt="Generic placeholder image">
+                            </div>
+                            <div class="media-body">
+                                <div class="mt-0">
+                                    <p class="text mb-0">We can ensure...</p>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <p class="meta-user-name mb-0">Shaun Park</p>
+                                    <p class="meta-time mb-0  align-self-center">1 day ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="footer dropdown-item" href="javascript:void(0);">
+                        <div class="btn btn-info mb-3 mr-2 btn-rounded"><i class="flaticon-arrow-right mr-3"></i> View more</div>
+                    </a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown notification-dropdown ml-3">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="notificationDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="flaticon-bell-4"></span><span class="badge badge-success">15</span>
+                </a>
+                <div class="dropdown-menu position-absolute" aria-labelledby="notificationDropdown">
+                    <a class="dropdown-item title" href="javascript:void(0);">
+                        <i class="flaticon-bell-13 mr-3"></i> <span>You have 15 new notifications</span>
+                    </a>
+
+                    <a class="dropdown-item text-center  p-1" href="javascript:void(0);">
+
+                        <div class="notification-list ">
+                            
+                            <div class="notification-item position-relative  mb-3">
+                                <div class="c-dropdown text-right">
+                                    <span id="c-dropdonbtn" class="c-dropbtn mr-2"><i class="flaticon-dots"></i></span>
+                                    <div class="c-dropdown-content">
+                                        <div class="c-dropdown-item">View</div>
+                                        <div class="c-dropdown-item">Delete</div>
+                                    </div>
+                                </div>
+                               
+                                <h6 class="mb-1">5 new members joined today</h6>
+                                <p><span class="meta-time">1 minute ago</span> . <span class="meta-member-notification">4 members</span></p>
+                                <ul class="list-inline badge-collapsed-img mt-3">
+                                    <li class="list-inline-item chat-online-usr">
+                                        <img src="assets/img/profile-2.jpg" alt="admin-profile" class="ml-0">
+                                    </li>
+                                    <li class="list-inline-item chat-online-usr">
+                                        <img src="assets/img/profile-3.jpg" alt="admin-profile">
+                                    </li>
+                                    <li class="list-inline-item chat-online-usr">
+                                        <img src="assets/img/profile-4.jpg" alt="admin-profile">
+                                    </li>
+                                    <li class="list-inline-item chat-online-usr">
+                                        <img src="assets/img/profile-5.jpg" alt="admin-profile">
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="notification-item position-relative  mb-3">
+
+                                <div class="c-dropdown text-right">
+                                    <span id="c-dropdonbtn2" class="c-dropbtn mr-2"><i class="flaticon-dots"></i></span>
+                                    <div class="c-dropdown-content">
+                                        <div class="c-dropdown-item">View</div>
+                                        <div class="c-dropdown-item">Delete</div>
+                                    </div>
+                                </div>
+                                
+                                <h6 class="mb-1">Very long description...</h6>
+                                <p><span class="meta-time">5 minutes ago</span> . <span class="meta-member-notification">5 members</span></p>
+                                <ul class="list-inline badge-collapsed-img mt-3">
+                                    <li class="list-inline-item chat-online-usr">
+                                        <img alt="admin-profile" src="assets/img/profile-6.jpg" class="ml-0">
+                                    </li>
+                                    <li class="list-inline-item chat-online-usr">
+                                        <img alt="admin-profile" src="assets/img/profile-7.jpg">
+                                    </li>
+                                    <li class="list-inline-item chat-online-usr">
+                                        <img alt="admin-profile" src="assets/img/profile-8.jpg">
+                                    </li>
+                                    <li class="list-inline-item chat-online-usr">
+                                        <img alt="admin-profile" src="assets/img/profile-10.jpg">
+                                    </li>
+                                    <li class="list-inline-item chat-online-usr">
+                                        <img alt="admin-profile" src="assets/img/profile-1.jpg">
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="notification-item position-relative  mb-3">
+                                <div class="c-dropdown text-right">
+                                    <span class="c-dropbtn mr-2"><i class="flaticon-dots"></i></span>
+                                    <div class="c-dropdown-content">
+                                        <div class="c-dropdown-item">View</div>
+                                        <div class="c-dropdown-item">Delete</div>
+                                    </div>
+                                </div>
+                                
+                                <h6 class="mb-1">New item are in queue</h6>
+                                <p><span class="meta-time">25 minutes ago</span> . <span class="meta-member-notification">3 members</span></p>
+                                <ul class="list-inline badge-collapsed-img mt-3">
+                                    <li class="list-inline-item chat-online-usr">
+                                        <img alt="admin-profile" src="assets/img/profile-11.jpg" class="ml-0">
+                                    </li>
+                                    <li class="list-inline-item chat-online-usr">
+                                        <img alt="admin-profile" src="assets/img/profile-16.jpg">
+                                    </li>
+                                    <li class="list-inline-item chat-online-usr">
+                                        <img alt="admin-profile" src="assets/img/profile-14.jpg">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="footer dropdown-item text-center p-2">
+                        <span class="mr-1">View All</span>
+                        <div class="btn btn-gradient-warning rounded-circle"><i class="flaticon-arrow-right flaticon-circle-p"></i></div>
+                    </a>
+                </div>
+            </li>
+        </ul>
 
 
         <ul class="navbar-nav flex-row ml-lg-auto">
@@ -93,7 +244,40 @@
                 </form>
             </li>
 
-            
+            <li class="nav-item dropdown app-dropdown  ml-lg-4 mr-lg-2 order-lg-0 order-2">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle" id="appDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="flaticon-bulb"></span>
+                </a>
+                <div class="dropdown-menu  position-absolute" aria-labelledby="appDropdown">
+                    <a class="dropdown-item" href="ecommerce_dashboard.html">
+                        <i class="flaticon-commerce"></i><span>eCommerce</span>
+                    </a>
+                    <a class="dropdown-item" href="form_bootstrap_basic.html">
+                        <i class="flaticon-edit-3"></i><span>Forms</span>
+                    </a>
+                    <a class="dropdown-item" href="table_basic.html">
+                        <i class="flaticon-table"></i><span>Tables</span>
+                    </a>
+                    <a class="dropdown-item" href="ui_buttons.html">
+                        <i class="flaticon-switch"></i><span>Buttons</span>
+                    </a>
+                    <a class="dropdown-item" href="ui_flaticon_icon.html">
+                        <i class="flaticon-edit"></i><span>Font Icons</span>
+                    </a>
+                    <a class="dropdown-item" href="modules_widgets.html">
+                        <i class="flaticon-computer-5"></i><span>Modules</span>
+                    </a>
+                    <a class="dropdown-item" href="map_google_basic.html">
+                        <i class="flaticon-location"></i><span>Maps</span>
+                    </a>
+                    <a class="dropdown-item" href="apps_drag_n_drop_calendar.html">
+                        <i class="flaticon-calendar-1"></i><span>Calendar</span>
+                    </a>
+                    <a class="dropdown-item" href="am_column_and_barchart.html">
+                        <i class="flaticon-chart-3"></i><span>Charts</span>
+                    </a>
+                </div>
+            </li>
 
 
             <li class="nav-item dropdown user-profile-dropdown ml-lg-0 mr-lg-2 ml-3 order-lg-0 order-1">
@@ -114,13 +298,18 @@
                         <i class="mr-1 flaticon-lock-2"></i> <span>Lock Screen</span>
                     </a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="logout.php">
+                    <a class="dropdown-item" href="user_login_1.html">
                         <i class="mr-1 flaticon-power-button"></i> <span>Log Out</span>
                     </a>
                 </div>
             </li>
 
-            
+            <li class="nav-item dropdown cs-toggle order-lg-0 order-3"> 
+                <a href="#" class="nav-link toggle-control-sidebar suffle">
+                    <span class="flaticon-menu-dot-fill d-lg-inline-block d-none"></span>
+                    <span class="flaticon-dots d-lg-none"></span>
+                </a>
+            </li>
         </ul>
     </header>
     <!--  END NAVBAR  -->
@@ -132,21 +321,21 @@
 
         <!--  BEGIN SIDEBAR  -->
 
-        <!-- <div class="sidebar-wrapper sidebar-theme">
+        <div class="sidebar-wrapper sidebar-theme">
             
             <div id="dismiss" class="d-lg-none"><i class="flaticon-cancel-12"></i></div>
             
-            <nav id="sidebar" class="mCS_destroyed" style="position: relative; overflow: visible;">
+            <nav id="sidebar">
 
                 <ul class="navbar-nav theme-brand flex-row  d-none d-lg-flex">
                     <li class="nav-item d-flex">
-                        <a href="index.html" class="navbar-brand">
+                        <a href="index-2.html" class="navbar-brand">
                             <img src="assets/img/logo-3.png" class="img-fluid" alt="logo">
                         </a>
                         <p class="border-underline"></p>
                     </li>
                     <li class="nav-item theme-text">
-                        <a href="index.html" class="nav-link"> Equation </a>
+                        <a href="index-2.html" class="nav-link"> Equation </a>
                     </li>
                 </ul>
 
@@ -165,7 +354,7 @@
                         </a>
                         <ul class="collapse submenu list-unstyled" id="dashboard" data-parent="#accordionExample">
                             <li>
-                                <a href="index.html"> <i class="flaticon-computer-4"></i> Default </a>
+                                <a href="index-2.html"> <i class="flaticon-computer-4"></i> Default </a>
                             </li>
                             <li>
                                 <a href="accounting_dashboard.html"> <i class="flaticon-chart-line"></i> Accounting </a>
@@ -211,7 +400,7 @@
                                 <a href="ecommerce_product_catalog.html"> Product Catalog </a>
                             </li>
                             <li>
-                                <a href="#product-details" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" data-parent="#ecommerce"> Product Details <i class="flaticon-right-arrow"></i> </a>
+                                <a href="#product-details" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"  data-parent="#ecommerce"> Product Details <i class="flaticon-right-arrow"></i> </a>
                                 <ul class="collapse list-unstyled sub-submenu" id="product-details">
                                     <li>
                                         <a href="ecommerce_product_details_1.html"> Product Details 1 </a>
@@ -285,7 +474,7 @@
                                 <i class="flaticon-right-arrow"></i>
                             </div>
                         </a>
-                        <ul class="collapse submenu list-unstyled" id="ui-features" data-parent="#accordionExample">
+                        <ul class="collapse submenu list-unstyled" id="ui-features"  data-parent="#accordionExample">
                             <li>
                                 <a href="ui_helper_classes.html"> Helper Classes </a>
                             </li>
@@ -551,12 +740,12 @@
                         </a>
                         <ul class="collapse submenu list-unstyled show" id="forms" data-parent="#accordionExample">
                             <li>
-                                <a href="#forms-bootstrap" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle"> Bootstrap <i class="flaticon-right-arrow"></i> </a>
-                                <ul class="collapse list-unstyled sub-submenu show" id="forms-bootstrap" data-parent="#forms"> 
+                                <a href="#forms-bootstrap" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> Bootstrap <i class="flaticon-right-arrow"></i> </a>
+                                <ul class="collapse list-unstyled sub-submenu" id="forms-bootstrap" data-parent="#forms"> 
                                     <li>
                                         <a href="form_bootstrap_basic.html"> Basic </a>
                                     </li>
-                                    <li class="active">
+                                    <li>
                                         <a href="form_bootstrap_rounded.html"> Rounded </a>
                                     </li>
                                 </ul>
@@ -637,7 +826,7 @@
                                 </ul>
                             </li>
 
-                            <li>
+                            <li class="active">
                                 <a href="form_fileupload.html"> File Upload </a>
                             </li>
                         </ul>
@@ -852,7 +1041,7 @@
                                         <a href="charts_echart_candlestick.html"> Candlestick </a>
                                     </li>
                                     <li>
-                                        <a href="charts_echart_funnel_radar.html"> Funnel &amp; Radar </a>
+                                        <a href="charts_echart_funnel_radar.html"> Funnel & Radar </a>
                                     </li>
                                     <li>
                                         <a href="charts_echart_scatters.html"> Scatter </a>
@@ -1251,8 +1440,7 @@
                 </ul>
             </nav>
 
-        </div> -->
-        <?php include "sidebar.php";?>
+        </div>
 
         <!--  END SIDEBAR  -->
 
@@ -1261,837 +1449,137 @@
             <div class="container">
                 <div class="page-header">
                     <div class="page-title">
-                        <!-- <h3>Bootstrap <small>Rounded</small></h3> -->
-                        <!-- <div class="crumbs">
+                        <h3>File Upload</h3>
+                        <div class="crumbs">
                             <ul id="breadcrumbs" class="breadcrumb">
-                                <li><a href="index.html"><i class="flaticon-home-fill"></i></a></li>
+                                <li><a href="index-2.html"><i class="flaticon-home-fill"></i></a></li>
                                 <li><a href="#">Forms</a></li>
-                                <li><a href="#">Bootstrap</a> </li>
-                                <li class="active"><a href="#">Rounded</a> </li>
+                                <li class="active"><a href="#">File Upload</a> </li>
                             </ul>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
-
-                <!-- <div class="row">
-
-                    <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header widget-heading">
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <p>Use <code>.form-control-rounded</code> to make input group rounded. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Input text</h4>
-                                    </div>                 
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <form method="post">
-                                    <div class="form-group">
-                                        <p>Use input <code>type="text"</code>.</p>
-                                        <label for="t-text" class="sr-only">Text</label>
-                                        <input id="t-text" type="text" name="txt" value="Some Text..." class="form-control-rounded form-control" required="">
-                                        <input type="submit" name="txt" class="mt-4 btn btn-button-7 btn-rounded">
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Password</h4>
-                                    </div>                                                                        
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <form method="post">
-                                    <div class="form-group">
-                                        <p>Use input <code>type="password"</code>.</p>
-                                        <label for="p-text" class="sr-only">Password</label>
-                                        <input id="p-text" type="password" name="pass" value="dummypassword" class="form-control-rounded form-control" required="">
-                                        <input type="submit" name="pass" class="mt-4 btn btn-button-7 btn-rounded">
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Email</h4>
-                                    </div>                                                                        
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <form method="post">
-                                    <div class="form-group">
-                                        <p>Use input <code>type="email"</code>.</p>
-                                        <label for="e-text" class="sr-only">Email</label>
-                                        <input id="e-text" type="email" name="email" value="email@mail.com" class="form-control-rounded form-control" required="">
-                                        <input type="submit" name="email" class="mt-4 btn btn-button-7 btn-rounded">
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Url</h4>
-                                    </div>                                                                        
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <form method="post">
-                                    <div class="form-group">
-                                        <p>Use input <code>type="url"</code>.</p>
-                                        <label for="url-text" class="sr-only">Url</label>
-                                        <input id="url-text" type="url" name="url" value="https://dummyurl.com" class="form-control-rounded form-control" required="">
-                                        <input type="submit" name="url" class="mt-4 btn btn-button-7 btn-rounded">
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Telephone Number</h4>
-                                    </div>                                                                        
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <form method="post">
-                                    <div class="form-group">
-                                        <p>Use input <code>type="tel"</code>.</p>
-                                        <label for="tel-text" class="sr-only">Telephone</label>
-                                        <input id="tel-text" type="tel" name="tel" value="6-(666)-111-7777" class="form-control-rounded form-control" required="">
-                                        <input type="submit" name="tel" class="mt-4 btn btn-button-7 btn-rounded">
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Search</h4>
-                                    </div>                                                                        
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <form method="post">
-                                    <div class="form-group">
-                                        <p>Use input <code>type="search"</code>.</p>
-                                        <label for="search-text" class="sr-only">Search</label>
-                                        <input id="search-text" type="search" class="form-control-rounded form-control" required="">
-                                        <input type="submit" name="search" class="mt-4 btn btn-button-7 btn-rounded">
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>                    
-
-                </div> -->
-
-                <!-- <div class="row">
+                <div class="row">
 
                     <div class="col-lg-12">
                         <div class="statbox widget box box-shadow">
                             <div class="widget-header widget-heading">
                                 <div class="row">
                                     <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Helper Text</h4>
+                                        <h4>Dropzone</h4>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
+                    <div class="col-lg-6 layout-spacing">
                         <div class="statbox widget box box-shadow">
                             <div class="widget-header">
                                 <div class="row">
                                     <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Input with help text ( Default Left)</h4>
-                                    </div>                      
+                                        <h4>Single File Upload</h4>
+                                    </div>      
                                 </div>
                             </div>
                             <div class="widget-content widget-content-area">
-                                <div class="form-group">
-                                    <p>Use <code>small</code> tag and <code>.text-muted</code> for helper text. </p>
-                                    <label for="h-text1" class="sr-only">Email address</label>
-                                    <input type="text" class="form-control-rounded  form-control" id="h-text1" aria-describedby="h-text1" placeholder="">
-                                    <small id="sh-text1" class="form-text text-muted">I am the helper text.</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Input with help text (Center)</h4>
-                                    </div>                      
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <div class="form-group">
-                                    <p>Use <code>.text-center</code> class to align center.</p>
-                                    <label for="h-text2" class="sr-only">Email address</label>
-                                    <input type="text" class="form-control-rounded  form-control" id="h-text2" aria-describedby="h-text2" placeholder="">
-                                    <small id="sh-text2" class="form-text text-muted text-center">I am the helper text.</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Input with help text (Right)</h4>
-                                    </div>                      
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <div class="form-group">
-                                    <p>Use <code>.text-right</code> class to align right.</p>
-                                    <label for="h-text3" class="sr-only">Email address</label>
-                                    <input type="text" class="form-control-rounded  form-control" id="h-text3" aria-describedby="h-text3" placeholder="">
-                                    <small id="sh-text3" class="form-text text-muted text-right">I am the helper text.</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Input with badge help text (Default Left)</h4>
-                                    </div>                      
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <div class="form-group">
-                                    <p>Wrap the <code>small</code> tag inside the <code>span</code> tag with  <code>.badge</code></p>
-                                    <label for="h-text4" class="sr-only">Email address</label>
-                                    <input type="text" class="form-control-rounded  form-control" id="h-text4" aria-describedby="h-text4" placeholder="">
-                                    <div class=" mt-1">
-                                        <span class="badge badge-primary">
-                                            <small id="sh-text4" class="form-text mt-0">I am the helper text.</small>
-                                        </span>
+                                <form class="dropzone-file-area dropzone dropzone-file-area--secondary" action="https://designreset.com/preview-equation/default/plugins/dropzone/upload.php" id="dropzone-file-area-one">
+                                    <div class="dropzone-file-area__msg dz-message needsclick">
+                                        <h3 class="dropzone-file-area__msg-title">Single File Upload.</h3>
+                                        <i class="flaticon-note-2 d-block mt-3 mb-3"></i>
+                                        <span class="dropzone-file-area__msg-desc">Drop file Here to upload</span>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Input with badge help text (Center)</h4>
-                                    </div>                      
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <div class="form-group">
-                                    <p>Use <code>.text-center</code> class to align center.</p>
-                                    <label for="h-text5" class="sr-only">Email address</label>
-                                    <input type="text" class="form-control-rounded  form-control" id="h-text5" aria-describedby="h-text5" placeholder="">
-                                    <div class="text-center mt-1">
-                                        <span class="badge badge-success">
-                                            <small id="sh-text5" class="form-text mt-0">I am the helper text.</small>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Input with badge help text (Right)</h4>
-                                    </div>                      
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <div class="form-group">
-                                    <p>Use <code>.text-right</code> class to align right.</p>
-                                    <label for="h-text6" class="sr-only">Email address</label>
-                                    <input type="text" class="form-control-rounded  form-control" id="h-text6" aria-describedby="h-text6" placeholder="">
-                                    <div class="text-right mt-1">
-                                        <span class="badge badge-warning">
-                                            <small id="sh-text6" class="form-text mt-0">I am the helper text.</small>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Input with block badge help text (Default Left)</h4>
-                                    </div>                      
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <div class="form-group">
-                                    <p>Use <code>.w-100</code> class to the <code>span</code> tag to make block.</p>
-                                    <label for="h-text7" class="sr-only">Email address</label>
-                                    <input type="text" class="form-control-rounded  form-control" id="h-text7" aria-describedby="h-text7" placeholder="">
-                                    <div class="mt-1">
-                                        <span class="badge badge-primary w-100">
-                                            <small id="sh-text7" class="form-text mt-0 text-left">I am the helper text.</small>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Input with block badge help text (Center)</h4>
-                                    </div>                      
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <div class="form-group">
-                                    <p>Use <code>.text-center</code> class to align center.</p>
-                                    <label for="h-text8" class="sr-only">Email address</label>
-                                    <input type="text" class="form-control-rounded  form-control" id="h-text8" aria-describedby="h-text8" placeholder="">
-                                    <div class="mt-1">
-                                        <span class="badge badge-success w-100">
-                                            <small id="sh-text8" class="form-text mt-0 text-center">I am the helper text.</small>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Input with block badge help text (Right)</h4>
-                                    </div>                      
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <div class="form-group">
-                                    <p>Use <code>.text-right</code> class to align right.</p>
-                                    <label for="h-text9" class="sr-only">Email address</label>
-                                    <input type="text" class="form-control-rounded  form-control" id="h-text9" aria-describedby="h-text9" placeholder="">
-                                    <div class="mt-1">
-                                        <span class="badge badge-warning w-100">
-                                            <small id="sh-text9" class="form-text mt-0 text-right">I am the helper text.</small>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
-
-                <div class="row layout-spacing">
-
-                    <!-- <div class="col-lg-6 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">                                
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Form controls</h4>
-                                    </div>                                                      
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <form>
-                                    <div class="form-group mb-4">
-                                        <label for="exampleFormControlInput1">Email address</label>
-                                        <input type="email" class="form-control-rounded form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                                    </div>
-                                    <div class="form-group mb-4">
-                                        <label for="exampleFormControlSelect1">Example select</label>
-                                        <select class="form-control-rounded form-control" id="exampleFormControlSelect1">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group mb-4">
-                                        <label for="exampleFormControlTextarea1">Example textarea</label>
-                                        <textarea class="form-control-rounded form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                    </div>
-                                    <div class="form-group mb-4 mt-3">
-                                        <label for="exampleFormControlFile1">Example file input</label>
-                                        <input type="file" class="form-control-file form-control-file-rounded" id="exampleFormControlFile1">
-                                    </div>
-                                    <input type="submit" name="time" class="mt-4 mb-4 btn btn-button-7 btn-rounded">
                                 </form>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
 
-
-
-                    <div class="col-lg-6 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing"   style="margin: auto;">
+                    <div class="col-lg-6 layout-spacing">
                         <div class="statbox widget box box-shadow">
-                            <div class="widget-header">                                
+                            <div class="widget-header">
                                 <div class="row">
                                     <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                       <center> <u><h4>Add Property</h4></u></center>
-                                    </div>                                                      
+                                        <h4>Multiple File Upload</h4>
+                                    </div>      
                                 </div>
                             </div>
                             <div class="widget-content widget-content-area">
-                                <form class="subcourse">
-                                   
-                                    <div class="form-group mb-4">
-                                        <!-- <label for="exampleFormControlInput1">Quantity</label> -->
-                                        <input name="name" type="text" class="form-control-rounded form-control" id="exampleFormControlInput1" placeholder="Property name">
+                                <form class="dropzone-file-area dropzone dropzone-file-area--success" action="https://designreset.com/preview-equation/default/plugins/dropzone/upload.php" id="dropzone-file-area-two">
+                                    <div class="dropzone-file-area__msg dz-message needsclick">
+                                        <h3 class="dropzone-file-area__msg-title">Multiple File Upload.</h3>
+                                        <i class="flaticon-notes-5 d-block mt-3 mb-3"></i>
+                                        <span class="dropzone-file-area__msg-desc">Drop file Here to upload</span>
                                     </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
 
-                                    <div class="form-group mb-4">
-                                        <!-- <label for="exampleFormControlInput1">Quantity</label> -->
-                                        <input name="location" type="text" class="form-control-rounded form-control" id="exampleFormControlInput1" placeholder="Enter Location of property">
+                <div class="row">
+
+                    <div class="col-lg-12">
+                        <div class="statbox widget box box-shadow">
+                            <div class="widget-header widget-heading">
+                                <div class="row">
+                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                        <h4>File Upload With Preview</h4>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                                    <div class="form-group mb-4">
-                                        <!-- <label for="exampleFormControlInput1">Quantity</label> -->
-                                        <input name="price" type="text" class="form-control-rounded form-control" id="exampleFormControlInput1" placeholder="Price of Land (you can leave it empty)">
-                                    </div>
-
-
-                                    
-
-
-
-                                    <div class="form-group mb-4">
-                                      
-                                      <select name="ptype" class="form-control-rounded form-control" id="exampleFormControlSelect1">
-                                          <option value="">Choose Property type</option>
-                                          <option value="Land">Land  </option>
-                                          <option value="Building">Building</option>
-                                          
-                                          
-                                         
-                                      </select>
-                                  </div>
-
-
-                                  <div class="form-group mb-4">
-                                      
-                                      <select name="pcat" class="form-control-rounded form-control" id="exampleFormControlSelect1">
-                                          <option value="">Choose Property Category</option>
-                                          <option value="Sale"> For sale  </option>
-                                          <option value="Rent">For Rent</option>
-                                          
-                                          
-                                         
-                                      </select>
-                                  </div>
-
-
-
-                                  <div class="form-group mb-4">
-                                        <!-- <label for="exampleFormControlInput1">Quantity</label> -->
-                                        <input name="area" type="text" class="form-control-rounded form-control" id="exampleFormControlInput1" placeholder="Area of Land (Length x Breadth) you can leave it  empty">
-                                    </div>
-
-
-
-                                    <div class="form-group mb-4">
-                                        <!-- <label for="exampleFormControlInput1">Quantity</label> -->
-                                        <input name="bed" type="text" class="form-control-rounded form-control" id="exampleFormControlInput1" placeholder="Number of Beds if any . You can leave it  empty">
-                                    </div>
-
-                                    <div class="form-group mb-4">
-                                        <!-- <label for="exampleFormControlInput1">Quantity</label> -->
-                                        <input name="bath" type="text" class="form-control-rounded form-control" id="exampleFormControlInput1" placeholder="Number of bath room if any . You can leave it  empty">
-                                    </div>
-
-                                    <div class="form-group mb-4">
-                                        <!-- <label for="exampleFormControlInput1">Quantity</label> -->
-                                        <input name="garage" type="text" class="form-control-rounded form-control" id="exampleFormControlInput1" placeholder="Number of Garage if any . You can leave it  empty">
-                                    </div>
-
-
-
-
-
-                                 
-
-                                    <div class="form-group mb-4">
-                                        <label for="exampleFormControlTextarea1">Enter short Description of Property</label>
-                                        <textarea name="description" class="form-control-rounded form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                    </div>
-
-
-
-                                    <!-- <div class="form-group mb-4">
-                                        <label for="exampleFormControlInput1">Upload image of Property</label>
-                                        <input name="image" type="file" class="form-control-rounded form-control" id="exampleFormControlInput1" >
-                                    </div> -->
-
+                    <div class="col-lg-6 layout-spacing">
+                        <div class="statbox widget box box-shadow">
+                            <div class="widget-header">
+                                <div class="row">
+                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                        <h4>Single File Upload</h4>
+                                    </div>      
+                                </div>
+                            </div>
                             <div class="widget-content widget-content-area">
                                 <div class="custom-file-container" data-upload-id="myFirstImage">
-                                    <label>Upload (Property image)  <a  style="color:red;" href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">x</a></label>
+                                    <label>Upload (Single File) <a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">x</a></label>
                                     <label class="custom-file-container__custom-file" >
-                                        <input type="file" class="custom-file-container__custom-file__custom-file-input" accept="image/*" name="image">
+                                        <input type="file" class="custom-file-container__custom-file__custom-file-input" accept="image/*">
                                         <input type="hidden" name="MAX_FILE_SIZE" value="10485760" />
                                         <span class="custom-file-container__custom-file__custom-file-control"></span>
                                     </label>
                                     <div class="custom-file-container__image-preview"></div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
 
-
-                                    
-
-                                    
-                                   
-                                    <input type="submit" name="subc" class="mt-4 mb-4 btn btn-button-7 btn-rounded sub" value="Add Property" style="margin-left:150px;background-color:green !important;">
-
-                                    <div id="respo">
-                                    <!-- <div id="mess"><p>Voucher generated and saved successfully</p></div> -->
-                                    
-                                    </div>
-                                </form>
+                    <div class="col-lg-6 layout-spacing">
+                        <div class="statbox widget box box-shadow">
+                            <div class="widget-header">
+                                <div class="row">
+                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                        <h4>Multiple File Upload</h4>
+                                    </div>      
+                                </div>
+                            </div>
+                            <div class="widget-content widget-content-area">
+                                <div class="custom-file-container" data-upload-id="mySecondImage">
+                                    <label>Upload (Allow Multiple) <a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">x</a></label>
+                                    <label class="custom-file-container__custom-file" >
+                                        <input type="file" class="custom-file-container__custom-file__custom-file-input" multiple>
+                                        <input type="hidden" name="MAX_FILE_SIZE" value="10485760" />
+                                        <span class="custom-file-container__custom-file__custom-file-control"></span>
+                                    </label>
+                                    <div class="custom-file-container__image-preview"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-
-
-                    
-
-                    
-
-                    <!-- <div class="col-lg-6 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">                                
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Form grid</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                               <form>
-                                    <div class="row  mb-4">
-                                        <div class="col">
-                                            <input type="text" class="form-control-rounded form-control" placeholder="First name">
-                                        </div>
-                                        <div class="col">
-                                            <input type="text" class="form-control-rounded form-control" placeholder="Last name">
-                                        </div>
-                                    </div>
-                                    <input type="submit" name="time" class="mt-4 mb-4 btn btn-button-7 btn-rounded">
-                                </form>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <!-- <div>
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">                                
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Form row</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                               <form>
-                                    <div class="form-row  mb-4">
-                                        <div class="col">
-                                          <input type="text" class="form-control-rounded form-control" placeholder="First name">
-                                        </div>
-                                        <div class="col">
-                                          <input type="text" class="form-control-rounded form-control" placeholder="Last name">
-                                        </div>
-                                    </div>
-                                    <input type="submit" name="time" class="mt-4 mb-4 btn btn-button-7 btn-rounded">
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-
-                    <div>
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">                                
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Form groups</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <form>
-                                    <div class="form-group  mb-4">
-                                        <label for="formGroupExampleInput">Example label</label>
-                                        <input type="text" class="form-control-rounded form-control" id="formGroupExampleInput" placeholder="Example input">
-                                    </div>
-                                    <div class="form-group  mb-4">
-                                        <label for="formGroupExampleInput2">Another label</label>
-                                        <input type="text" class="form-control-rounded form-control" id="formGroupExampleInput2" placeholder="Another input">
-                                    </div>
-                                    <input type="submit" name="time" class="mt-4 mb-4 btn btn-button-7 btn-rounded">
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                                        
-
-                    <div>
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">                                
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Help text</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <label for="inputPassword5">Password</label>
-                                <input type="password" id="inputPassword5" class="form-control-rounded form-control" aria-describedby="passwordHelpBlock">
-                                <small id="passwordHelpBlock" class="form-text text-muted mb-4 mt-3">
-                                  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
-                                </small>
-                                <input type="submit" name="time" class="mt-4 mb-4 btn btn-button-7 btn-rounded">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">                                
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Inline Help text</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <form class="form-inline">
-                                    <div class="form-group  d-block text-left">
-                                        <label for="inputPassword6" class="d-block">Password</label>
-                                        <input type="password" id="inputPassword6" class="form-control-rounded form-control mt-2" aria-describedby="passwordHelpInline">
-                                        <small id="passwordHelpInline" class="text-muted">
-                                            Min 8-20 char
-                                        </small>
-                                    </div>
-                                </form>
-                                <input type="submit" name="time" class="mt-4 mb-4 btn btn-button-7 btn-rounded">
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <!-- <div class="col-lg-6 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">                                
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Disabled forms</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <form>
-                                    <fieldset disabled="">
-                                        <div class="form-group mb-4">
-                                            <label for="disabledTextInput">Disabled input</label>
-                                            <input type="text" id="disabledTextInput" class="form-control-rounded  form-control" placeholder="Disabled input">
-                                        </div>
-                                        <div class="form-group mb-4">
-                                            <label for="disabledSelect">Disabled select menu</label>
-                                            <select id="disabledSelect" class="form-control-rounded  form-control">
-                                                <option>Disabled select</option>
-                                            </select>
-                                        </div>
-                                        <button type="submit" class="btn btn-success btn-rounded mb-4 mt-2">Submit</button>
-                                    </fieldset>
-                                </form>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
 
-                <!-- <div class="row layout-spacing">
-                    
-                    <div class="col-lg-12">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header widget-heading">
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Custom Forms</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">                                
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Select menu</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <select class="custom-select form-control-rounded mb-4 ">
-                                    <option selected="">Open this select menu</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">                                
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>File browser</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <div class="custom-file mb-4">
-                                    <input type="file" class="custom-file-input" id="customFile">
-                                    <label class="custom-file-label custom-file-rounded" for="customFile">Choose file</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">                                
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Select menu sizing</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <select class="form-control-rounded custom-select custom-select-lg mb-4">
-                                  <option selected="">Open this select menu</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </select>
-
-                                <select class="form-control-rounded custom-select custom-select-sm mb-4">
-                                  <option selected="">Open this select menu</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">                                
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Multi select</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <select class="form-control-rounded custom-select mb-4" multiple="">
-                                    <option selected="">Open this select menu</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing">
-                        <div class="statbox widget box box-shadow">
-                            <div class="widget-header">                                
-                                <div class="row">
-                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <h4>Select size</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="widget-content widget-content-area">
-                                <select class="form-control-rounded custom-select mb-4" size="4">
-                                    <option selected="">Open this select menu</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                    <option value="3">Four</option>
-                                    <option value="3">Five</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
         <!--  END CONTENT PART  -->
@@ -2101,17 +1589,32 @@
     <!--  BEGIN FOOTER  -->
     <footer class="footer-section theme-footer">
 
-        <div class="footer-section-1 sidebar-theme">
+        <div class="footer-section-1  sidebar-theme">
             
         </div>
 
         <div class="footer-section-2 container-fluid">
             <div class="row">
-                
+                <div id="toggle-grid" class="col-xl-7 col-md-6 col-sm-6 col-12 text-sm-left text-center">
+                    <ul class="list-inline links ml-sm-5">
+                        <li class="list-inline-item mr-3">
+                            <a href="javascript:void(0);">Home</a>
+                        </li>
+                        <li class="list-inline-item mr-3">
+                            <a href="javascript:void(0);">Blog</a>
+                        </li>
+                        <li class="list-inline-item mr-3">
+                            <a href="javascript:void(0);">About</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="javascript:void(0);">Buy</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="col-xl-5 col-md-6 col-sm-6 col-12">
                     <ul class="list-inline mb-0 d-flex justify-content-sm-end justify-content-center mr-sm-3 ml-sm-0 mx-3">
                         <li class="list-inline-item  mr-3">
-                            <p class="bottom-footer">© <?php echo date("Y");?> <a target="_blank" href="#">Designed by Dolllarsoft Corporation</a></p>
+                            <p class="bottom-footer">&#xA9; 2019 <a target="_blank" href="https://designreset.com/equation">Equation Admin Theme</a></p>
                         </li>
                         <li class="list-inline-item align-self-center">
                             <div class="scrollTop"><i class="flaticon-up-arrow-fill-1"></i></div>
@@ -2124,7 +1627,7 @@
     <!--  END FOOTER  -->
 
     <!--  BEGIN CONTROL SIDEBAR  -->
-    <aside class="control-sidebar control-sidebar-light-color cs-content mCustomScrollbar _mCS_1 mCS-autoHide" style="overflow: visible;"><div id="mCSB_1" class="mCustomScrollBox mCS-minimal mCSB_vertical mCSB_outside" style="max-height: none;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+    <aside class="control-sidebar control-sidebar-light-color cs-content">
         <div class="">
 
             <div class="row">
@@ -2135,7 +1638,7 @@
                 </div>
                 <div class="col-md-12">
                     <div class="usr-info text-center mb-5">
-                        <img alt="admin-profile" src="assets/img/c-14.jpeg" class="img-fluid rounded-circle mb-3 mCS_img_loaded">
+                        <img alt="admin-profile" src="assets/img/c-14.jpg" class="img-fluid rounded-circle mb-3">
                         <div class=" mt-2">
                             <h5 class="usr-name mb-0">Linda Nelson</h5>
                             <p class="usr-occupation mb-0 mt-1">Developer</p>
@@ -2191,7 +1694,7 @@
 
 
                             <div class="media">
-                                <img alt="admin-profile" src="assets/img/c-13.jpeg" class="img-fluid mr-3 mCS_img_loaded">
+                                <img alt="admin-profile" src="assets/img/c-13.jpg" class="img-fluid mr-3">
                                 <div class="media-body">
                                     <h6 class="mb-0">Sean Freeman</h6>
                                     <p>has replied your mail.</p>
@@ -2201,7 +1704,7 @@
                             </div>
 
                             <div class="media">
-                                <img alt="admin-profile" src="assets/img/c-15.jpeg" class="img-fluid mr-3 mCS_img_loaded">
+                                <img alt="admin-profile" src="assets/img/c-15.jpg" class="img-fluid mr-3">
                                 <div class="media-body">
                                     <h6 class="mb-0">Laurie Fox</h6>
                                     <p>comment to your posts.</p>
@@ -2254,7 +1757,7 @@
 
 
                             <div class="media">
-                                <img alt="admin-profile" src="assets/img/c-7.jpeg" class="img-fluid mr-3 mCS_img_loaded">
+                                <img alt="admin-profile" src="assets/img/c-7.jpg" class="img-fluid mr-3">
                                 <div class="media-body">
                                     <h6 class="mb-0">Angie Lamb</h6>
                                     <p>has replied your mail.</p>
@@ -2264,7 +1767,7 @@
                             </div>
 
                             <div class="media">
-                                <img alt="admin-profile" src="assets/img/c-5.jpeg" class="img-fluid mr-3 mCS_img_loaded">
+                                <img alt="admin-profile" src="assets/img/c-5.jpg" class="img-fluid mr-3">
                                 <div class="media-body">
                                     <h6 class="mb-0">Amy Diaz</h6>
                                     <p>comment to your posts.</p>
@@ -2274,7 +1777,7 @@
                             </div>
 
                             <div class="media">
-                                <img alt="admin-profile" src="assets/img/c-7.jpeg" class="img-fluid mr-3 mCS_img_loaded">
+                                <img alt="admin-profile" src="assets/img/c-7.jpg" class="img-fluid mr-3">
                                 <div class="media-body">
                                     <h6 class="mb-0">Irene Collins</h6>
                                     <p>has replied your mail.</p>
@@ -2285,7 +1788,7 @@
 
 
                             <div class="media">
-                                <img alt="admin-profile" src="assets/img/c-9.jpeg" class="img-fluid mr-3 mCS_img_loaded">
+                                <img alt="admin-profile" src="assets/img/c-9.jpg" class="img-fluid mr-3">
                                 <div class="media-body">
                                     <h6 class="mb-0">Lila Perry</h6>
                                     <p>has replied your mails.</p>
@@ -2397,25 +1900,25 @@
                             <ul class="list-inline text-center mb-5">
                                 
                                 <li class="list-inline-item">
-                                    <img alt="admin-profile" src="assets/img/c-1.jpeg" class="mCS_img_loaded">
+                                    <img alt="admin-profile" src="assets/img/c-1.jpg">
                                     <span class="badge badge-pill badge-new">8</span>
                                 </li>
 
                                 <li class="list-inline-item">
-                                    <img alt="admin-profile" src="assets/img/c-2.jpeg" class="mCS_img_loaded">
+                                    <img alt="admin-profile" src="assets/img/c-2.jpg">
                                 </li>
 
                                 <li class="list-inline-item">
-                                    <img alt="admin-profile" src="assets/img/c-13.jpeg" class="mCS_img_loaded">
+                                    <img alt="admin-profile" src="assets/img/c-13.jpg">
                                 </li>
 
                                 <li class="list-inline-item">
-                                    <img alt="admin-profile" src="assets/img/c-3.jpeg" class="mCS_img_loaded">
+                                    <img alt="admin-profile" src="assets/img/c-3.jpg">
                                     <span class="badge badge-pill badge-new">5</span>
                                 </li>
 
                                 <li class="list-inline-item">
-                                    <img alt="admin-profile" src="assets/img/c-4.jpeg" class="mCS_img_loaded">
+                                    <img alt="admin-profile" src="assets/img/c-4.jpg">
                                 </li>
 
                             </ul>
@@ -2439,7 +1942,7 @@
                                 </div>
 
                                 <div class="media">
-                                    <img alt="admin-profile" src="assets/img/c-15.jpeg" class="img-fluid mr-3 mCS_img_loaded">
+                                    <img alt="admin-profile" src="assets/img/c-15.jpg" class="img-fluid mr-3">
                                     <div class="media-body">
                                         <h6>Kara Young</h6>
                                         <p>2 mins ago</p>
@@ -2449,7 +1952,7 @@
                                 </div>
 
                                 <div class="media mt-2">
-                                    <img alt="admin-profile" src="assets/img/P-2.jpeg" class="img-fluid mr-3 mCS_img_loaded">
+                                    <img alt="admin-profile" src="assets/img/P-2.jpg" class="img-fluid mr-3">
                                     <div class="media-body">
                                         <h6>Justin Cross</h6>
                                         <p>5 mins ago</p>
@@ -2459,7 +1962,7 @@
                                 </div>
 
                                 <div class="media mt-2">
-                                    <img alt="admin-profile" src="assets/img/c-5.jpeg" class="img-fluid mr-3 mCS_img_loaded">
+                                    <img alt="admin-profile" src="assets/img/c-5.jpg" class="img-fluid mr-3">
                                     <div class="media-body">
                                         <h6>Amy Diaz</h6>
                                         <p>7 mins ago</p>
@@ -2470,7 +1973,7 @@
 
 
                                 <div class="media mt-2">
-                                    <img alt="admin-profile" src="assets/img/c-6.jpeg" class="img-fluid mr-3 mCS_img_loaded">
+                                    <img alt="admin-profile" src="assets/img/c-6.jpg" class="img-fluid mr-3">
                                     <div class="media-body">
                                         <h6>Ernest Reeves</h6>
                                         <p>10 mins ago</p>
@@ -2510,7 +2013,7 @@
 
 
                             <div class="media d-block d-sm-flex text-sm-left text-center">
-                                <img alt="admin-profile" class="mr-sm-3 mb-sm-0 mb-3 mCS_img_loaded" src="assets/img/c-7.jpeg">
+                                <img alt="admin-profile" class="mr-sm-3 mb-sm-0 mb-3" src="assets/img/c-7.jpg">
                                 <div class="media-body mb-4">
                                     <h6 class="media-heading mt-0"><span class="media-title"> Irene Collins</span><span class="badge badge-info float-sm-right ml-2">9</span></h6>
                                     <p class="media-text">
@@ -2521,7 +2024,7 @@
 
 
                             <div class="media d-block d-sm-flex text-sm-left text-center">
-                                <img alt="admin-profile" class="mr-sm-3 mb-sm-0 mb-3 rounded mCS_img_loaded" src="assets/img/c-8.jpeg">
+                                <img alt="admin-profile" class="mr-sm-3 mb-sm-0 mb-3 rounded" src="assets/img/c-8.jpg">
                                 <div class="media-body mb-4">
                                     <h6 class="media-heading mt-0"><span class="media-title"> Thomas Granger</span><span class="badge badge-secondary float-sm-right ml-2">9</span></h6>
                                     <p class="media-text">
@@ -2532,7 +2035,7 @@
 
 
                             <div class="media d-block d-sm-flex text-sm-left text-center">
-                                <img alt="admin-profile" class="mr-sm-3 mb-sm-0 mb-3 rounded-circle mCS_img_loaded" src="assets/img/c-9.jpeg">
+                                <img alt="admin-profile" class="mr-sm-3 mb-sm-0 mb-3 rounded-circle" src="assets/img/c-9.jpg">
                                 <div class="media-body mb-4">
                                     <h6 class="media-heading mt-0"><span class="media-title"> Grace Roberts</span><span class="badge badge-warning float-sm-right ml-2">9</span></h6>
                                     <p class="media-text">
@@ -2565,7 +2068,7 @@
                                     
                                 <div class="media mb-3">
                                     <div class="profile-img mr-3">
-                                        <img alt="admin-profile" src="assets/img/profile-16.jpeg" class="img-fluid mCS_img_loaded">
+                                        <img alt="admin-profile" src="assets/img/profile-16.jpg" class="img-fluid">
                                     </div>
                                     <div class="media-body">
                                         <h6 class="mt-2">Traci Lopez</h6>
@@ -2574,7 +2077,7 @@
                                 
                                 <div class="media mb-3">
                                     <div class="profile-img mr-3">
-                                        <img alt="admin-profile" src="assets/img/c-11.jpeg" class="img-fluid mCS_img_loaded">
+                                        <img alt="admin-profile" src="assets/img/c-11.jpg" class="img-fluid">
                                     </div>
                                     <div class="media-body">
                                         <h6 class="mt-2">Kristen Beck</h6>
@@ -2583,7 +2086,7 @@
                                 
                                 <div class="media mb-5">
                                     <div class="profile-img mr-3">
-                                        <img alt="admin-profile" src="assets/img/c-12.jpeg" class="img-fluid mCS_img_loaded">
+                                        <img alt="admin-profile" src="assets/img/c-12.jpg" class="img-fluid">
                                     </div>
                                     <div class="media-body">
                                         <h6 class="mt-2">Keith Foster</h6>
@@ -2784,7 +2287,7 @@
                                     </div>
                                     <div class="n-chk">
                                         <label class="new-control new-checkbox checkbox-secondary mr-1">
-                                          <input type="checkbox" class="new-control-input" checked="">
+                                          <input type="checkbox" class="new-control-input" checked>
                                           <span class="new-control-indicator"></span><span class="invisible">C</span>
                                         </label>
                                     </div>
@@ -2818,7 +2321,7 @@
                                     </div>
                                     <div class="n-chk">
                                         <label class="new-control new-checkbox checkbox-secondary mr-1">
-                                          <input type="checkbox" class="new-control-input" checked="">
+                                          <input type="checkbox" class="new-control-input" checked>
                                           <span class="new-control-indicator"></span><span class="invisible">C</span>
                                         </label>
                                     </div>
@@ -2835,7 +2338,7 @@
                                     </div>
                                     <div class="n-chk">
                                         <label class="new-control new-checkbox checkbox-secondary mr-1">
-                                          <input type="checkbox" class="new-control-input" checked="">
+                                          <input type="checkbox" class="new-control-input" checked>
                                           <span class="new-control-indicator"></span><span class="invisible">C</span>
                                         </label>
                                     </div>
@@ -2927,20 +2430,17 @@
             </div>
 
         </div>
-    </div></div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-minimal mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 100px; display: block; height: 166px; max-height: 593.033px; top: 0px;"><div class="mCSB_dragger_bar" style="line-height: 100px;"></div></div><div class="mCSB_draggerRail"></div></div></div></aside>
+    </aside>
     <!--  END CONTROL SIDEBAR  -->
-
-    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
     <script src="assets/js/libs/jquery-3.1.1.min.js"></script>
-    <script src="ajax_gen.js"></script>
     <script src="assets/js/loader.js"></script>
     <script src="bootstrap/js/popper.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="plugins/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="plugins/blockui/jquery.blockUI.min.js"></script>
     <script src="assets/js/app.js"></script>
-
-
     
     <script>
         $(document).ready(function() {
@@ -2948,8 +2448,9 @@
         });
     </script>
     <script src="assets/js/custom.js"></script>
-    <!-- END GLOBAL MANDATORY STYLES -->   
-
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
+    
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
     <script src="plugins/dropzone/dropzone.min.js"></script>
     <script src="plugins/dropzone/custom-dropzone.js"></script>
     <script src="plugins/file-upload/file-upload-with-preview.js"></script>
@@ -2960,7 +2461,8 @@
         //Second upload
         var secondUpload = new FileUploadWithPreview('mySecondImage')
     </script>
-   
-
+    <!-- END PAGE LEVEL PLUGINS -->    
 </body>
+
+<!-- Mirrored from designreset.com/preview-equation/default/form_fileupload.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 25 Jul 2019 16:15:02 GMT -->
 </html>

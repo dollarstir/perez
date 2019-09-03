@@ -25,7 +25,7 @@ include "core.php";
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>Halidas College  </title>
+    <title>Perez Investment  </title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="assets/css/loader.css" rel="stylesheet" type="text/css" />
@@ -147,7 +147,7 @@ include "core.php";
                             <div class="widget-header">
                                 <div class="row">
                                     <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                                        <u><center><h4>COURSES</h4></center></u>
+                                        <u><center><h4>Properties</h4></center></u>
                                     </div>                 
                                 </div>
                             </div>
@@ -157,16 +157,20 @@ include "core.php";
                                         <thead>
                                             <tr>
                                                 <th>ID</th>
-                                                <th>Course Title</th>
-                                                <th>Duration</th>
-                                                <th>Level</th>
-                                                <th>Fees</th>
-                                                
+                                                <th>Name</th>
                                                 <th>Location</th>
-                                                <th>Requirement</th>
+                                                <th>Price</th>
                                                 
-                                                <th>Structure</th>
-                                                <th>Description</th>
+                                                
+                                                <th>Category</th>
+                                                <th>Area(L x B)</th>
+                                                
+                                                <th>Bed Rooms</th>
+                                                <th>Bath Room</th>
+                                                <th>Garage</th>
+
+
+                                                <th>Image</th>
                                                 <!-- <th class="invisible"></th> -->
                                                 <th>Action </th>
                                             </tr>
@@ -175,7 +179,7 @@ include "core.php";
                                             <?php 
                                             
                                             include "db.php";
-                                            echo getcourses()   ;
+                                            echo getproperty()   ;
                                             
                                             
                                             ?>

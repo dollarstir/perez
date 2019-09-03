@@ -25,7 +25,7 @@ include "core.php";
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>Halidas College  </title>
+    <title>Perez Investment  </title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="assets/css/loader.css" rel="stylesheet" type="text/css" />
@@ -1139,9 +1139,9 @@ include "core.php";
                 
 
 
-                $("#getorder").load('tts.php');
-                $("#tsold").load('soldv.php');
-                $("#vavl").load('vav.php');
+                $("#getorder").load('tppt.php');
+                $("#tsold").load('ttbd.php');
+                $("#vavl").load('ttpt.php');
                 $("#tdy").load('stoday.php');
                 
             }, 1000);

@@ -1,6 +1,6 @@
 <?php
 
-include 'db.php';
+
 include 'core.php';
 
 $name= $_POST['name'];

@@ -1,5 +1,6 @@
 <?php
 include "core.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,6 +18,8 @@ include "core.php";
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- <link href="img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
@@ -160,7 +163,7 @@ include "core.php";
             <a class="nav-link" href="about.php">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="property.php">Property</a>
+            <a class="nav-link" href="property.php">Property</a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link" href="blog-grid.html">Blog</a>
@@ -193,6 +196,28 @@ include "core.php";
     </div>
   </nav>
   <!--/ Nav End /-->
+  <?php
+include "db.php";
+$id = $_GET['id'];
+
+$getfu= mysqli_query($conn,"SELECT * FROM  properties WHERE id='$id' ");
+
+$row=mysqli_fetch_array($getfu);
+
+$name= $row[''];
+$location=$row['location'];
+$price= $row['price'];
+$ptype=$row['ptype'];
+$pcat = $row['pcat'];
+$area= $row['area'];
+$bath=$row['bath'];
+$bed=$row['bed'];
+$garage=$row['garage'];
+$pic =$row['image'];
+$id = $row['id'];
+$description=$row['description'];
+
+?>
 
   <!--/ Intro Single star /-->
   <section class="intro-single">
@@ -200,18 +225,21 @@ include "core.php";
       <div class="row">
         <div class="col-md-12 col-lg-8">
           <div class="title-single-box">
-            <h1 class="title-single">Our Amazing Properties</h1>
-            <span class="color-text-a">Grid Properties</span>
+            <h1 class="title-single"><?php echo $name ?></h1>
+            <span class="color-text-a"><?php echo $location ?></span>
           </div>
         </div>
         <div class="col-md-12 col-lg-4">
           <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a href="#">Home</a>
+                <a href="index.php">Home</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="property.php">Properties</a>
               </li>
               <li class="breadcrumb-item active" aria-current="page">
-                Properties Grid
+              <?php echo $name ?>
               </li>
             </ol>
           </nav>
@@ -221,340 +249,256 @@ include "core.php";
   </section>
   <!--/ Intro Single End /-->
 
-  <!--/ Property Grid Star /-->
-  <section class="property-grid grid">
+  <!--/ Property Single Star /-->
+  <section class="property-single nav-arrow-b">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <div class="grid-option">
-            <form>
-              <select class="custom-select">
-                <option selected>All</option>
-                <option value="1">New to Old</option>
-                <option value="2">For Rent</option>
-                <option value="3">For Sale</option>
-              </select>
-            </form>
-          </div>
-        </div>
-
-
-          <?php 
-             echo allproperties();
-          ?>
-        <!-- <div class="col-md-4">
-          <div class="card-box-a card-shadow">
-            <div class="img-box-a">
-              <img src="img/property-1.jpg" alt="" class="img-a img-fluid">
+          <div id="property-single-carousel" class="owl-carousel owl-arrow gallery-property">
+            <div class="carousel-item-b">
+              <img src="admin/<?php echo $pic ?>" alt="">
             </div>
-            <div class="card-overlay">
-              <div class="card-overlay-a-content">
-                <div class="card-header-a">
-                  <h2 class="card-title-a">
-                    <a href="#">204 Mount
-                      <br /> Olive Road Two</a>
-                  </h2>
-                </div>
-                <div class="card-body-a">
-                  <div class="price-box d-flex">
-                    <span class="price-a">rent | $ 12.000</span>
+            <div class="carousel-item-b">
+              <img src="admin/<?php echo $pic ?>" alt="">
+            </div>
+            <div class="carousel-item-b">
+              <img src="admin/<?php echo $pic ?>" alt="">
+            </div>
+          </div>
+          <div class="row justify-content-between">
+            <div class="col-md-5 col-lg-4">
+              <div class="property-price d-flex justify-content-center foo">
+                <div class="card-header-c d-flex">
+                  <div class="card-box-ico">
+                    <span class="ion-money">$</span>
                   </div>
-                  <a href="property-single.html" class="link-a">Click here to view
-                    <span class="ion-ios-arrow-forward"></span>
-                  </a>
+                  <div class="card-title-c align-self-center">
+                    <h5 class="title-c"><?php echo $price ?></h5>
+                  </div>
                 </div>
-                <div class="card-footer-a">
-                  <ul class="card-info d-flex justify-content-around">
-                    <li>
-                      <h4 class="card-info-title">Area</h4>
-                      <span>340m
-                        <sup>2</sup>
+              </div>
+              <div class="property-summary">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="title-box-d section-t4">
+                      <h3 class="title-d">Quick Summary</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="summary-list">
+                  <ul class="list">
+                    <li class="d-flex justify-content-between">
+                      <strong>Property ID:</strong>
+                      <span><?php echo $id ?></span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                      <strong>Location:</strong>
+                      <span><?php echo $location ?></span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                      <strong>Property Type:</strong>
+                      <span><?php echo $ptype ?></span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                      <strong>Status:</strong>
+                      <span><?php echo $pcat ?></span>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                      <strong>Area:</strong>
+                      <span><?php echo $area ?>
+                        <sup></sup>
                       </span>
                     </li>
-                    <li>
-                      <h4 class="card-info-title">Beds</h4>
-                      <span>2</span>
+                    <li class="d-flex justify-content-between">
+                      <strong>Beds:</strong>
+                      <span><?php echo $bed ?></span>
                     </li>
-                    <li>
-                      <h4 class="card-info-title">Baths</h4>
-                      <span>4</span>
+                    <li class="d-flex justify-content-between">
+                      <strong>Baths:</strong>
+                      <span><?php echo $bath ?></span>
                     </li>
-                    <li>
-                      <h4 class="card-info-title">Garages</h4>
-                      <span>1</span>
+                    <li class="d-flex justify-content-between">
+                      <strong>Garage:</strong>
+                      <span><?php echo $garage ?></span>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-box-a card-shadow">
-            <div class="img-box-a">
-              <img src="img/property-3.jpg" alt="" class="img-a img-fluid">
-            </div>
-            <div class="card-overlay">
-              <div class="card-overlay-a-content">
-                <div class="card-header-a">
-                  <h2 class="card-title-a">
-                    <a href="#">204 Mount
-                      <br /> Olive Road Two</a>
-                  </h2>
-                </div>
-                <div class="card-body-a">
-                  <div class="price-box d-flex">
-                    <span class="price-a">rent | $ 12.000</span>
+            <div class="col-md-7 col-lg-7 section-md-t3">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="title-box-d">
+                    <h3 class="title-d">Property Description</h3>
                   </div>
-                  <a href="property-single.html" class="link-a">Click here to view
-                    <span class="ion-ios-arrow-forward"></span>
-                  </a>
-                </div>
-                <div class="card-footer-a">
-                  <ul class="card-info d-flex justify-content-around">
-                    <li>
-                      <h4 class="card-info-title">Area</h4>
-                      <span>340m
-                        <sup>2</sup>
-                      </span>
-                    </li>
-                    <li>
-                      <h4 class="card-info-title">Beds</h4>
-                      <span>2</span>
-                    </li>
-                    <li>
-                      <h4 class="card-info-title">Baths</h4>
-                      <span>4</span>
-                    </li>
-                    <li>
-                      <h4 class="card-info-title">Garages</h4>
-                      <span>1</span>
-                    </li>
-                  </ul>
                 </div>
               </div>
+              <div class="property-description">
+                <p class="description color-text-a" style="color:black">
+                <?php echo $description ?>
+                </p>
+                <p class="description color-text-a no-margin">
+                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue leo eget
+                  malesuada. Quisque velit nisi,
+                  pretium ut lacinia in, elementum id enim. Donec sollicitudin molestie malesuada.
+                </p>
+              </div>
+              <!-- <div class="row section-t3">
+                <div class="col-sm-12">
+                  <div class="title-box-d">
+                    <h3 class="title-d">Amenities</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="amenities-list color-text-a">
+                <ul class="list-a no-margin">
+                  <li>Balcony</li>
+                  <li>Outdoor Kitchen</li>
+                  <li>Cable Tv</li>
+                  <li>Deck</li>
+                  <li>Tennis Courts</li>
+                  <li>Internet</li>
+                  <li>Parking</li>
+                  <li>Sun Room</li>
+                  <li>Concrete Flooring</li>
+                </ul>
+              </div> -->
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card-box-a card-shadow">
-            <div class="img-box-a">
-              <img src="img/property-6.jpg" alt="" class="img-a img-fluid">
+        <!-- <div class="col-md-10 offset-md-1">
+          <ul class="nav nav-pills-a nav-pills mb-3 section-t3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-video-tab" data-toggle="pill" href="#pills-video" role="tab"
+                aria-controls="pills-video" aria-selected="true">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-plans-tab" data-toggle="pill" href="#pills-plans" role="tab" aria-controls="pills-plans"
+                aria-selected="false">Floor Plans</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-map-tab" data-toggle="pill" href="#pills-map" role="tab" aria-controls="pills-map"
+                aria-selected="false">Ubication</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab">
+              <iframe src="https://player.vimeo.com/video/73221098" width="100%" height="460" frameborder="0"
+                webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
-            <div class="card-overlay">
-              <div class="card-overlay-a-content">
-                <div class="card-header-a">
-                  <h2 class="card-title-a">
-                    <a href="#">204 Mount
-                      <br /> Olive Road Two</a>
-                  </h2>
-                </div>
-                <div class="card-body-a">
-                  <div class="price-box d-flex">
-                    <span class="price-a">rent | $ 12.000</span>
-                  </div>
-                  <a href="property-single.html" class="link-a">Click here to view
-                    <span class="ion-ios-arrow-forward"></span>
-                  </a>
-                </div>
-                <div class="card-footer-a">
-                  <ul class="card-info d-flex justify-content-around">
-                    <li>
-                      <h4 class="card-info-title">Area</h4>
-                      <span>340m
-                        <sup>2</sup>
-                      </span>
-                    </li>
-                    <li>
-                      <h4 class="card-info-title">Beds</h4>
-                      <span>2</span>
-                    </li>
-                    <li>
-                      <h4 class="card-info-title">Baths</h4>
-                      <span>4</span>
-                    </li>
-                    <li>
-                      <h4 class="card-info-title">Garages</h4>
-                      <span>1</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+            <div class="tab-pane fade" id="pills-plans" role="tabpanel" aria-labelledby="pills-plans-tab">
+              <img src="img/plan2.jpg" alt="" class="img-fluid">
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-box-a card-shadow">
-            <div class="img-box-a">
-              <img src="img/property-7.jpg" alt="" class="img-a img-fluid">
-            </div>
-            <div class="card-overlay">
-              <div class="card-overlay-a-content">
-                <div class="card-header-a">
-                  <h2 class="card-title-a">
-                    <a href="#">204 Mount
-                      <br /> Olive Road Two</a>
-                  </h2>
-                </div>
-                <div class="card-body-a">
-                  <div class="price-box d-flex">
-                    <span class="price-a">rent | $ 12.000</span>
-                  </div>
-                  <a href="property-single.html" class="link-a">Click here to view
-                    <span class="ion-ios-arrow-forward"></span>
-                  </a>
-                </div>
-                <div class="card-footer-a">
-                  <ul class="card-info d-flex justify-content-around">
-                    <li>
-                      <h4 class="card-info-title">Area</h4>
-                      <span>340m
-                        <sup>2</sup>
-                      </span>
-                    </li>
-                    <li>
-                      <h4 class="card-info-title">Beds</h4>
-                      <span>2</span>
-                    </li>
-                    <li>
-                      <h4 class="card-info-title">Baths</h4>
-                      <span>4</span>
-                    </li>
-                    <li>
-                      <h4 class="card-info-title">Garages</h4>
-                      <span>1</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-box-a card-shadow">
-            <div class="img-box-a">
-              <img src="img/property-8.jpg" alt="" class="img-a img-fluid">
-            </div>
-            <div class="card-overlay">
-              <div class="card-overlay-a-content">
-                <div class="card-header-a">
-                  <h2 class="card-title-a">
-                    <a href="#">204 Mount
-                      <br /> Olive Road Two</a>
-                  </h2>
-                </div>
-                <div class="card-body-a">
-                  <div class="price-box d-flex">
-                    <span class="price-a">rent | $ 12.000</span>
-                  </div>
-                  <a href="property-single.html" class="link-a">Click here to view
-                    <span class="ion-ios-arrow-forward"></span>
-                  </a>
-                </div>
-                <div class="card-footer-a">
-                  <ul class="card-info d-flex justify-content-around">
-                    <li>
-                      <h4 class="card-info-title">Area</h4>
-                      <span>340m
-                        <sup>2</sup>
-                      </span>
-                    </li>
-                    <li>
-                      <h4 class="card-info-title">Beds</h4>
-                      <span>2</span>
-                    </li>
-                    <li>
-                      <h4 class="card-info-title">Baths</h4>
-                      <span>4</span>
-                    </li>
-                    <li>
-                      <h4 class="card-info-title">Garages</h4>
-                      <span>1</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-box-a card-shadow">
-            <div class="img-box-a">
-              <img src="img/property-10.jpg" alt="" class="img-a img-fluid">
-            </div>
-            <div class="card-overlay">
-              <div class="card-overlay-a-content">
-                <div class="card-header-a">
-                  <h2 class="card-title-a">
-                    <a href="#">204 Mount
-                      <br /> Olive Road Two</a>
-                  </h2>
-                </div>
-                <div class="card-body-a">
-                  <div class="price-box d-flex">
-                    <span class="price-a">rent | $ 12.000</span>
-                  </div>
-                  <a href="property-single.html" class="link-a">Click here to view
-                    <span class="ion-ios-arrow-forward"></span>
-                  </a>
-                </div>
-                <div class="card-footer-a">
-                  <ul class="card-info d-flex justify-content-around">
-                    <li>
-                      <h4 class="card-info-title">Area</h4>
-                      <span>340m
-                        <sup>2</sup>
-                      </span>
-                    </li>
-                    <li>
-                      <h4 class="card-info-title">Beds</h4>
-                      <span>2</span>
-                    </li>
-                    <li>
-                      <h4 class="card-info-title">Baths</h4>
-                      <span>4</span>
-                    </li>
-                    <li>
-                      <h4 class="card-info-title">Garages</h4>
-                      <span>1</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+            <div class="tab-pane fade" id="pills-map" role="tabpanel" aria-labelledby="pills-map-tab">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.98731968482413!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes+Square!5e0!3m2!1ses-419!2sve!4v1510329142834"
+                width="100%" height="460" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
           </div>
         </div> -->
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <nav class="pagination-a">
-            <ul class="pagination justify-content-end">
-              <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1">
-                  <span class="ion-ios-arrow-back"></span>
-                </a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">1</a>
-              </li>
-              <li class="page-item active">
-                <a class="page-link" href="#">2</a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="#">3</a>
-              </li>
-              <li class="page-item next">
-                <a class="page-link" href="#">
-                  <span class="ion-ios-arrow-forward"></span>
-                </a>
-              </li>
-            </ul>
-          </nav>
+        <div class="col-md-12">
+          <div class="row section-t3">
+            <div class="col-sm-12">
+              <div class="title-box-d">
+                <h3 class="title-d">Contact Agent</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <img src="img/agent-4.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="property-agent">
+                <h4 class="title-agent">Anabella Geller</h4>
+                <p class="color-text-a">
+                  Nulla porttitor accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
+                  dui. Quisque velit nisi,
+                  pretium ut lacinia in, elementum id enim.
+                </p>
+                <ul class="list-unstyled">
+                  <li class="d-flex justify-content-between">
+                    <strong>Phone:</strong>
+                    <span class="color-text-a">(222) 4568932</span>
+                  </li>
+                  <li class="d-flex justify-content-between">
+                    <strong>Mobile:</strong>
+                    <span class="color-text-a">777 287 378 737</span>
+                  </li>
+                  <li class="d-flex justify-content-between">
+                    <strong>Email:</strong>
+                    <span class="color-text-a">annabella@example.com</span>
+                  </li>
+                  <li class="d-flex justify-content-between">
+                    <strong>Skype:</strong>
+                    <span class="color-text-a">Annabela.ge</span>
+                  </li>
+                </ul>
+                <div class="socials-a">
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#">
+                        <i class="fa fa-dribbble" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+              <div class="property-contact">
+                <form class="form-a">
+                  <div class="row">
+                    <div class="col-md-12 mb-1">
+                      <div class="form-group">
+                        <input type="text" class="form-control form-control-lg form-control-a" id="inputName"
+                          placeholder="Name *" required>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-1">
+                      <div class="form-group">
+                        <input type="email" class="form-control form-control-lg form-control-a" id="inputEmail1"
+                          placeholder="Email *" required>
+                      </div>
+                    </div>
+                    <div class="col-md-12 mb-1">
+                      <div class="form-group">
+                        <textarea id="textMessage" class="form-control" placeholder="Comment *" name="message" cols="45"
+                          rows="8" required></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <button type="submit" class="btn btn-a">Send Message</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <!--/ Property Grid End /-->
+  <!--/ Property Single End /-->
 
   <!--/ footer Star /-->
   <section class="section-footer">
@@ -738,5 +682,5 @@ include "core.php";
   <script>if( window.self == window.top ) { (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-55234356-4', 'auto'); ga('send', 'pageview'); } </script>
 </body>
 
-
+<!-- Mirrored from bootstrapmade.com/demo/themes/EstateAgency/property-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Aug 2019 12:18:50 GMT -->
 </html>
